@@ -13,5 +13,10 @@
 
 Route::get('/', 'ContentController@index')->name('content.index');
 
+Route::get('/category', 'CategoryController@index')->name('category.index');
+Route::post('/category', 'CategoryController@create')->name('category.create');
+
+Route::get('/tag', 'TagController@index')->name('tag.index');
+
 Auth::routes();
 

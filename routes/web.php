@@ -20,3 +20,7 @@ Route::get('/tag', 'TagController@index')->name('tag.index');
 
 Auth::routes();
 
+
+Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function (){
+    Route::get('dashbord', 'DashbordController@index')->name('dashbord');
+});

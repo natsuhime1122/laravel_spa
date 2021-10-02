@@ -22,5 +22,5 @@ Auth::routes();
 
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function (){
-    Route::get('dashbord', 'DashbordController@index')->name('dashbord');
+    Route::get('/', 'DashbordController@index')->name('dashbord');
 });

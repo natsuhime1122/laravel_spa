@@ -253,6 +253,33 @@ return [
             'label'       => 4,
             'label_color' => 'success',
         ],
+        ['header' => 'category_management'],
+        [
+            'text' => 'category_master',
+            'url' => 'admin/category',
+        ],
+        [
+            'text' => 'category_new',
+            'url' => 'admin/category/new',
+        ],
+        ['header' => 'tag_management'],
+        [
+            'text' => 'tag_master',
+            'url' => 'admin/tag',
+        ],
+        [
+            'text' => 'tag_new',
+            'url' => 'admin/tag/new',
+        ],
+        ['header' => 'file_management'],
+        [
+            'text' => 'file_master',
+            'url' => 'admin/file',
+        ],
+        [
+            'text' => 'file_new',
+            'url' => 'admin/file/new',
+        ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',

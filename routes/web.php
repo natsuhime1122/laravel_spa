@@ -21,6 +21,22 @@ Route::get('/tag', 'TagController@index')->name('tag.index');
 Auth::routes();
 
 
+//管理画面
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function (){
-    Route::get('dashbord', 'DashbordController@index')->name('dashbord');
+    Route::get('/', 'DashbordController@index')->name('dashbord');
+
+    //カテゴリー
+    Route::prefix('category')->name('category.')->group(function (){
+        Route::get('/', 'CategoryController@index')->name('index');
+    });
+
+    //タグ
+    Route::prefix('tag')->name('tag.')->group(function (){
+        Route::get('/', 'TagController@index')->name('index');
+    });
+
+    //ファイル
+    Route::prefix('file')->name('file.')->group(function (){
+        Route::get('/', 'FileController@index')->name('index');
+    });
 });

@@ -16,6 +16,9 @@ return [
     'important'                     => '重要',
     'warning'                       => '警告',
     'information'                   => 'インフォメーション',
+    'preset_management'             => 'プリセット管理',
+    'preset_master'                 => 'プリセットマスタ',
+    'preset_new'                    => 'プリセット登録',
     'category_management'           => 'カテゴリー管理',
     'category_master'               => 'カテゴリーマスタ',
     'category_new'                  => 'カテゴリー登録',
@@ -25,6 +28,6 @@ return [
     'file_management'               => 'ファイル管理',
     'file_master'                   => 'ファイルマスタ',
     'file_new'                      => 'ファイル登録',
-    'profile_master'                => 'プロファイルマスタ',
-    'profile_new'                   => 'プロファイル登録',
+    'preset_master'                 => 'プリセットマスタ',
+    'preset_new'                    => 'プリセット登録',
 ];

@@ -253,6 +253,15 @@ return [
             'label'       => 4,
             'label_color' => 'success',
         ],
+        ['header' => 'preset_management'],
+        [
+            'text' => 'preset_master',
+            'url' => 'admin/preset',
+        ],
+        [
+            'text' => 'preset_new',
+            'url' => 'admin/preset/new',
+        ],
         ['header' => 'category_management'],
         [
             'text' => 'category_master',

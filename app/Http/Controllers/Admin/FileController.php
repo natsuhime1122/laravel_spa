@@ -11,4 +11,9 @@ class FileController extends Controller
     {
         return view('admin.file.index');
     }
+
+    public function new()
+    {
+        return view('admin.file.form');
+    }
 }

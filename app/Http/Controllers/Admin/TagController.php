@@ -11,4 +11,9 @@ class TagController extends Controller
     {
         return view('admin.tag.index');
     }
+
+    public function new()
+    {
+        return view('admin.tag.form');
+    }
 }

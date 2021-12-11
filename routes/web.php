@@ -47,6 +47,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function (){
     Route::prefix('tag')->name('tag.')->group(function (){
         Route::get('/', 'TagController@index')->name('index');
         Route::get('/new', 'TagController@new')->name('new');
+        Route::post('/create', 'TagController@create')->name('create');
     });
 
     //ファイル

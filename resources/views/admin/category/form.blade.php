@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'プリセット登録')
+@section('title', 'カテゴリー登録')
 
 @section('content_header')
-    <h1>プリセット登録</h1>
+    <h1>カテゴリー登録</h1>
 @stop
 
 @section('content')

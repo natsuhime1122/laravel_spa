@@ -40,6 +40,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function (){
     Route::prefix('category')->name('category.')->group(function (){
         Route::get('/', 'CategoryController@index')->name('index');
         Route::get('/new', 'CategoryController@new')->name('new');
+        Route::post('/create', 'CategoryController@create')->name('create');
     });
 
     //タグ

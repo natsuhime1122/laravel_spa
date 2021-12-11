@@ -33,7 +33,7 @@ class PresetController extends Controller
             // $message = 'プリセットの登録に失敗しました';
         }
 
-        return redirect()->route('preset.index');
+        return redirect( route('preset.index') );
     }
 
     public function enable(Request $request)
@@ -54,11 +54,11 @@ class PresetController extends Controller
 
             DB::commit();
         } catch (\Exception $exception) {
-            report($exception);
             DB::rollback();
+            report($exception);
         }
 
-        return redirect()->route('content.index');
+        return redirect( route('content.index') );
 
     }
 }
